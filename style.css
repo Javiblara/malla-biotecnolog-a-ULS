@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    background-color: #f9f7f7;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #4a4e69;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.course {
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.course.pending {
+    background-color: #eeeeee;
+}
+
+.course.in-progress {
+    background-color: #cde9f5;
+}
+
+.course.completed {
+    background-color: #c7f5c4;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #d3cce3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
